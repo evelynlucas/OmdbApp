@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#757575"
+    tools:context=".presentation.MainActivity">
+
+    <TextView
+        android:id="@+id/textview_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_headers"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/the_office_series_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_headers"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/parks_and_rec_series_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview_office" />
+
+    <TextView
+        android:id="@+id/textview_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_headers"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/good_place_series_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview_parks" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_parks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_two" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_office"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_one" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_goodplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_three" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">First Seasons</string>
+    <string name="title_string">Title: %1$s</string>
+    <string name="director_string">Director: %1$s</string>
+    <string name="writer_string">Writer: %1$s</string>
+    <string name="plot_string">Plot: %1$s</string>
+    <string name="the_office_series_title">The Office</string>
+    <string name="parks_and_rec_series_title">Parks and Recreation</string>
+    <string name="good_place_series_title">The Good Place</string>
+    <string name="menu_sort_by_rating">Sort By Rating</string>
+    <string name="menu_sort_by_title">Sort By Title</string>
+    <string name="menu_sort_chronological">Sort Chronological</string>
+
+
+</resources>
